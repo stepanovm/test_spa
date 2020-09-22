@@ -1,6 +1,6 @@
 <?php
 
-namespace api\model;
+namespace core;
 
 use PDO;
 
@@ -22,7 +22,7 @@ class DB
     {
         // create new PDO, if not exist
         if(!isset(self::$pdo)){
-            $dbParams = require (__DIR__ . '/../config/db.php');
+            $dbParams = require(__DIR__ . '/../config/db.php');
             $dsn = $dbParams['sqlType'].':host='.$dbParams['host'].';dbname='.$dbParams['dbname'].';charset='.$dbParams['charset'];
             $pdo_params = array (
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

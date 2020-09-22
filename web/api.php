@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../api/autoload.php';
+require_once __DIR__ . '/../core/autoload.php';
 
 /**
  * Так как это тестовый пример, маршрутизация написана здесь,

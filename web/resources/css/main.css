@@ -1,0 +1,67 @@
+div.filter-container {margin: 20px 0;}
+div.filter-container label {margin-left: 10px;}
+
+
+div.table-container {
+    height: 500px;
+}
+
+table#spa_table {
+    width: 600px;
+}
+
+table#spa_table td {
+    padding: 4px;
+    border: 1px solid #bfbfbf;
+}
+
+[data-sort="nm"] {width: 30%;}
+[data-sort="qnt"] {width: 20%;}
+[data-sort="dst"] {width: 20%;}
+th.th-date {width: 30%;}
+
+tr.spa_tbl_header th {cursor: pointer;}
+
+div#pagination {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 13px 0;
+}
+
+
+div#pagination > div {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 30px;
+    background-color: #fff;
+    border: 1px solid rgb(255 139 64);
+    border-radius: 6px;
+    margin-right: 8px;
+}
+div#pagination > div:hover {
+    background-color: rgb(255 139 64);
+}
+div#pagination > div.active {
+    background-color: rgb(255 208 178);
+    cursor: auto;
+}
+
+span.sort {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0 0 0 10px;
+}
+span.sort.ascending {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    border-color: #ff5500;
+}
+span.sort.descending {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border-color: #ff5500;
+}
